@@ -181,7 +181,7 @@ var {
  */
 #header-wrapper {
   /* Debug styles, is this working */
-  background: rgba(255, 192, 203, 0.5);
+  background: green;
 }
 #header-wrapper .container {}
 

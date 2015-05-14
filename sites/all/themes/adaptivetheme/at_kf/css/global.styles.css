@@ -180,8 +180,7 @@ var {
  * Wraps the header
  */
 #header-wrapper {
-  /* Debug styles, is this working */
-  background: rgba(255, 192, 203, 0.5);
+  background: green;
 }
 #header-wrapper .container {}
 
@@ -225,8 +224,7 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
-  /* Debug styles, is this working? */
-  background: rgba(255, 192, 203, 0.5);
+  background: lightblue;
 }
 #footer-wrapper .container {}
 
@@ -1255,7 +1253,11 @@ ul.action-links li {}
 /*
  * "Search form" block
  */
-#block-search-form {}
+#block-search-form {
+  background: red;
+  width: 200px;
+
+}
 
 /*
  * "Shortcuts" block
@@ -1280,7 +1282,10 @@ ul.action-links li {}
 /*
  * "Navigation" block for Drupal navigation menu
  */
-#block-system-navigation {}
+#block-system-navigation {
+  background: gray;
+
+}
 
 /*
  * "User menu" block for Drupal user menu
