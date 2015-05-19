@@ -45,7 +45,15 @@ body {
  *   HTML Elements
  * ========================================================================== */
 
-h1 {}
+h1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #484848;
+  display: inline-block;
+  border-bottom: 2px solid #263b96;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 h2 {}
 
@@ -214,7 +222,10 @@ var {
 /*
  * Wraps the main content column
  */
-#content-wrapper {}
+#content-wrapper {
+  padding-top: 20px;
+
+}
 #content-wrapper .container {}
 
 /*
@@ -750,13 +761,19 @@ ul.menu li.last {}
 #breadcrumb li {
   list-style: none;
   display: inline;
+  color: #6e6e70;
 }
 
 #breadcrumb li.crumb-first {}
 
-#breadcrumb li.crumb-last {}
+#breadcrumb li.crumb-last {
+  text-transform: capitalize;
+}
 
-#breadcrumb a {}
+#breadcrumb a {
+  color: #f26525;
+  text-transform: uppercase;
+}
 
 #breadcrumb a:link,
 #breadcrumb a:visited {}
@@ -767,7 +784,11 @@ ul.menu li.last {}
 #breadcrumb a:hover,
 #breadcrumb a:focus {}
 
-#breadcrumb .crumb-separator {}
+#breadcrumb .crumb-separator {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #6e6e70;
+}
 
 
 /* =============================================================================
@@ -1844,4 +1865,33 @@ tr.error {}
   margin: 0 20px 20px 0;
   min-height: 260px;
   width: auto;
+}
+
+/* =============================================================================
+ *   FAM IT Specific Formatting
+ * ========================================================================== */
+section.famit-callout {
+  border: 1px solid #acacac;
+}
+
+section.famit-callout .block-inner {
+  margin: 0px;
+}
+
+section.famit-callout div.block-title {
+  color: #263b96;
+  height: 48px;
+  width: 100%;
+  background-image: url("../images/block_title_background_temp.png");
+  border-bottom: 1px solid #acacac;
+}
+
+section.famit-callout h2.block-title {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+section.famit-callout .block-content {
+  margin: 10px 10px;
 }
