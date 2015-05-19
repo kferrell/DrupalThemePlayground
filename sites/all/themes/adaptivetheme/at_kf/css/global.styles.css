@@ -180,7 +180,10 @@ var {
  * Wraps the header
  */
 #header-wrapper {
-  background: green;
+  background-image: url("../images/background_temp.png");
+  height: 150px;
+  
+  border-bottom: 15px solid #f26623;
 }
 #header-wrapper .container {}
 
@@ -242,7 +245,8 @@ var {
  * Logo
  */
 #logo {
-  padding: 10px 0;
+  padding: 25px 0;
+  float: left;
 }
 
 #logo img {
@@ -259,18 +263,25 @@ var {
  */
 #site-name {
   margin: 0;
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 #site-name a {}
 
 #site-name a:link,
 #site-name a:visited {
+  color: #f26623;
   text-decoration: none;
 }
 
 #site-name a:hover,
 #site-name a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*
@@ -398,7 +409,11 @@ ul.links li {
 /*
  * Header region, embedded in the #header
  */
-.region-header {}
+.region-header {
+  float: right;
+  position: relative;
+  top: -100px;
+}
 
 /*
  * Generally used to output Drupals help block, if the help module is enabled
@@ -1254,9 +1269,35 @@ ul.action-links li {}
  * "Search form" block
  */
 #block-search-form {
-  background: red;
-  width: 200px;
+  height: 40px;
+  overflow: visible;
+}
 
+#search-block-form {
+  height: 40px;
+}
+
+#block-search-form input.form-text
+{
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  border-style: solid; 
+  border-width: 0px 0px 1px 0px; 
+  border-color: #FFFFFF;
+}
+
+#block-search-form .form-actions input.form-submit
+{
+  border:0px;
+  background:url("../images/search_icon_temp.png") no-repeat;
+  color:rgba(0,0,0,0);
+  width:40px;
+  height:40px;
+  position: relative;
+  top: 0px;
+  float: left;
+  margin-right: 5px;
 }
 
 /*
